@@ -45,5 +45,6 @@ EXPOSE 22
 
 # PLEASE CHANGE THAT AFTER FIRST LOGIN
 RUN echo 'mogenius:mogenius' | chpasswd
+RUN echo "PLEASE CHANGE THAT AFTER FIRST LOGIN"
 
 CMD ["/usr/sbin/sshd", "-D", "-e"]
