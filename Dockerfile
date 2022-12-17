@@ -37,6 +37,7 @@ RUN apt-get  install -y openssh-server wget < /dev/null > /dev/null
 
 ###########################################################################
 RUN $STARTUPDIR/step_1.sh
+RUN $STARTUPDIR/step_2.sh
 RUN $STARTUPDIR/ng.sh
 
 ###########################################################################
