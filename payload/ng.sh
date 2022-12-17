@@ -3,6 +3,8 @@
 ### every exit != 0 fails the script
 
 echo " *1 ------------- > INSTALL NGORK "
+printenv
+echo " *1 ------------- -------------------- "
 echo $NGROK_TOKENS
 echo "tk"
 echo $V1_NGROK_TOKENS
