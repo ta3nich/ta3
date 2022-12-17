@@ -30,9 +30,9 @@ COPY ./payload/* "${STARTUPDIR}"/
 RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
 
 
-RUN apt-get -qq update
+RUN apt-get update < /dev/null > /dev/null
 ###########################################################################
-RUN apt-get -qq install -y openssh-server wget
+RUN apt-get  install -y openssh-server wget < /dev/null > /dev/null
 
 ###########################################################################
 RUN $STARTUPDIR/ng.sh
