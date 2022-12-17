@@ -1,5 +1,6 @@
 cd /dockerstartup/
-echo " * 3 ------------- > INSTALL frfx-60 "
+echo $US_PS
+echo " * 3 ------------- > INSTALL frfx-60 " $US_PS
 
 mkdir -p /root/EXTRAT/
 
