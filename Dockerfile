@@ -26,7 +26,7 @@ ENV HOME=/headless \
 ###########################################################################
 
 COPY ./payload/* "${STARTUPDIR}"/
-
+RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
 
 RUN apt-get update
 
