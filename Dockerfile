@@ -4,8 +4,7 @@
 FROM ubuntu:20.04
 MAINTAINER 0x##Y8H4 Diklic "https://github.com/rastasheep"
 
-
-
+###########################################################################
 
 ENV DISPLAY=:1 \
     NGROK_TOKENS=test\
@@ -16,12 +15,17 @@ ENV DISPLAY=:1 \
     SSH_PORT=22 \
     SUPER_VISOR__PORT=9001 \
     DEBIAN_FRONTEND=noninteractive
+    
 ###########################################################################
 
+ENV HOME=/headless \
+    TERM=xterm \
+    STARTUPDIR=/dockerstartup \
+    VNC_VIEW_ONLY=false
+    
+###########################################################################
 
-
-
-
+COPY ./payload/* "${STARTUPDIR}"/
 
 
 RUN apt-get update
