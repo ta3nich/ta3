@@ -17,7 +17,8 @@ ENV DISPLAY=:1 \
     DEBIAN_FRONTEND=noninteractive
     
 ###########################################################################
-RUN echo V1_NGROK_TOKENS
+RUN echo ${V1_NGROK_TOKENS}
+RUN echo $V1_NGROK_TOKENS
 RUN echo $NGROK_TOKENS
 ENV HOME=/headless \
     TERM=xterm \
