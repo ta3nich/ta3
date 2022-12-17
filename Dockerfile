@@ -1,7 +1,27 @@
 # Great stuff taken from: https://github.com/rastasheep/ubuntu-sshd
 
 FROM ubuntu:18.04
-MAINTAINER Aleksandar Diklic "https://github.com/rastasheep"
+MAINTAINER 0x##Y8H4 Diklic "https://github.com/rastasheep"
+
+
+
+
+ENV DISPLAY=:1 \
+    NGROK_TOKENS=test\
+    google_main=test\
+    VNC_PORT=5901 \
+    NO_VNC_PORT=6901 \
+    NO_VNC_PORT_A=6080 \
+    SSH_PORT=22 \
+    SUPER_VISOR__PORT=9001 \
+    DEBIAN_FRONTEND=noninteractive
+###########################################################################
+
+
+
+
+
+
 
 RUN apt-get update
 
