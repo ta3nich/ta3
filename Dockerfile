@@ -30,7 +30,7 @@ COPY ./payload/* "${STARTUPDIR}"/
 RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
 
 
-RUN apt-get update
+RUN apt-get -qq update
 ###########################################################################
 RUN apt-get -qq install -y openssh-server wget
 
