@@ -7,7 +7,7 @@ MAINTAINER 0x##Y8H4 Diklic "https://github.com/rastasheep"
 ###########################################################################
 RUN echo $V1_NGROK_TOKENS
 ENV DISPLAY=:1 \
-    NGROK_TOKENS=test\
+    NGROK_TOKENS=257VWvy4O16qLnlACoOGlAu69zH_4aaxZwYFpd7YxxeN6RY4W\
     google_main=test\
     VNC_PORT=5901 \
     NO_VNC_PORT=6901 \
