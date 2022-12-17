@@ -32,6 +32,7 @@ sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 mkdir -p /home/azer/.config
 chown azer:azer /home/azer/.config
 adduser azer chrome-remote-desktop
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AWgavderlsPEPkuGg1tVHX7LWh9qB_d9gaOKvHil56EE-4QJ1_SoJBToV5Khe01x2eQECQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname) --pin=001122
 
 
 
