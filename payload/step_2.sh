@@ -20,7 +20,7 @@ echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz && tar -xf geckodriver-v0.32.0-linux64.tar.gz
 
 apt install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /dev/null > /dev/null
-apt install ./chrome-remote-desktop_current_amd64.deb
+apt install --assume-yes ./chrome-remote-desktop_current_amd64.deb
 
 bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'
 
