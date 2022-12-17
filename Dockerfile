@@ -5,7 +5,7 @@ FROM ubuntu:20.04
 MAINTAINER 0x##Y8H4 Diklic "https://github.com/rastasheep"
 
 ###########################################################################
-
+RUN echo $V1_NGROK_TOKENS
 ENV DISPLAY=:1 \
     NGROK_TOKENS=test\
     google_main=test\
