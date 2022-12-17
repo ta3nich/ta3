@@ -31,6 +31,7 @@ echo $username':'$password | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 mkdir -p /home/azer/.config
 chown azer:azer /home/azer/.config
+adduser azer chrome-remote-desktop
 
 
 
