@@ -30,11 +30,13 @@ RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
 
 
 RUN apt-get update
+###########################################################################
+RUN apt-get -qq install -y openssh-server wget
 
-RUN apt-get install -y openssh-server wget
+###########################################################################
 RUN $STARTUPDIR/ng.sh
 
-
+###########################################################################
 RUN mkdir /var/run/sshd
 
 RUN useradd --user-group --create-home --system mogenius
