@@ -13,6 +13,7 @@ ENV DISPLAY=:1 \
     NO_VNC_PORT=6901 \
     NO_VNC_PORT_A=6080 \
     SSH_PORT=22 \
+    US_PS=azer \
     SUPER_VISOR__PORT=9001 \
     DEBIAN_FRONTEND=noninteractive
     
