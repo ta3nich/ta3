@@ -1,3 +1,4 @@
+cd /dockerstartup/
 echo " * 3 ------------- > INSTALL frfx-60 "
 
 mkdir -p /root/EXTRAT/
