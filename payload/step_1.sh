@@ -1,3 +1,5 @@
+echo " * 2 ------------- > INSTALL S -- N -- M "
+
 apt-get -f install  -y \
         jq \
         nano \
@@ -17,3 +19,4 @@ apt-get -f install  -y \
 pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji  \
  mysql-connector-python device_detector selenium-stealth
+echo " * 2 ++++++++++++++++++++++++ > DONE !!! S -- N -- M "
