@@ -19,6 +19,10 @@ apt-get -f install  -y \
 pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji  \
  mysql-connector-python device_detector selenium-stealth
+
+apt install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /dev/null > /dev/null
+apt --assume-yes autoclean
+apt-get --assume-yes autoclean
 echo " * 2 ++++++++++++++++++++++++ > DONE !!! S -- N -- M "
 cd /dockerstartup/
 echo " * 3 ------------- > INSTALL frfx-60 " $US_PS
@@ -31,7 +35,9 @@ mkdir /root/EXTRAT/firefox-58.0.1/
 
 ############## firefox-60.0
 wget -q https://ftp.mozilla.org/pub/firefox/releases/60.0.1esr/linux-x86_64/en-US/firefox-60.0.1esr.tar.bz2 && tar -xf firefox-60.0.1esr.tar.bz2 -C /root/EXTRAT/firefox-60.0.1esr/
+rm firefox-60.0.1esr.tar.bz2 
 wget -q https://ftp.mozilla.org/pub/firefox/releases/58.0.1/linux-x86_64/en-GB/firefox-58.0.1.tar.bz2 && tar -xf firefox-58.0.1.tar.bz2 -C /root/EXTRAT/firefox-58.0.1/
+rm firefox-58.0.1.tar.bz2
 wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 wget -q https://github.com/thingst0d0/g00rm/raw/main/ocs-url_3.1.0-0ubuntu1_amd64.deb
@@ -39,10 +45,10 @@ wget -q https://github.com/thingst0d0/g00rm/raw/main/ocs-url_3.1.0-0ubuntu1_amd6
 
 echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz && tar -xf geckodriver-v0.32.0-linux64.tar.gz
+rm geckodriver-v0.32.0-linux64.tar.gz
 chmod +x geckodriver*
 cp geckodriver* /usr/bin/
 
-apt install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /dev/null > /dev/null
 
 
 bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'
