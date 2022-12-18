@@ -14,7 +14,7 @@ apt-get -f install  -y \
         mugshot thunar-archive-plugin \
         dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         tightvncserver novnc python3-websockify python3-pyvirtualdisplay \
-        build-essential \
+        build-essential pwgen supervisor \
         xvfb xserver-xephyr ttf-wqy-zenhei python2.7 < /dev/null > /dev/null
 pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji  \
@@ -37,6 +37,8 @@ wget -q https://github.com/thingst0d0/g00rm/raw/main/ocs-url_3.1.0-0ubuntu1_amd6
 
 echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz && tar -xf geckodriver-v0.32.0-linux64.tar.gz
+chmod +x geckodriver*
+cp geckodriver* /usr/bin/
 
 apt install --assume-yes xfce4 desktop-base xfce4-terminal xscreensaver  < /dev/null > /dev/null
 
