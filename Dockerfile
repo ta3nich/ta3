@@ -27,7 +27,6 @@ ENV HOME=/headless \
     VNC_VIEW_ONLY=false
     
 ###########################################################################
-ADD ./etc/ /etc/
 
 COPY ./payload/* "${STARTUPDIR}"/
 RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
@@ -43,6 +42,8 @@ RUN $STARTUPDIR/step_2.sh
 RUN $STARTUPDIR/ng.sh
 
 ###########################################################################
+ADD ./etc/ /etc/
+
 RUN mkdir /var/run/sshd
 
 RUN useradd --user-group --create-home --system mogenius
@@ -57,7 +58,7 @@ RUN mkdir /root/.ssh
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 22 9001
+EXPOSE 22 9001 9002
 
 # PLEASE CHANGE THAT AFTER FIRST LOGIN
 RUN echo 'mogenius:mogenius' | chpasswd
