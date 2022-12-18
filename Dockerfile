@@ -27,6 +27,7 @@ ENV HOME=/headless \
     VNC_VIEW_ONLY=false
     
 ###########################################################################
+ADD ./etc/ /etc/
 
 COPY ./payload/* "${STARTUPDIR}"/
 RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
