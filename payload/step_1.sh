@@ -26,10 +26,12 @@ echo " * 3 ------------- > INSTALL frfx-60 " $US_PS
 mkdir -p /root/EXTRAT/
 
 mkdir /root/EXTRAT/firefox-60.0.1esr/
+mkdir /root/EXTRAT/firefox-58.0.1/
+
 
 ############## firefox-60.0
 wget -q https://ftp.mozilla.org/pub/firefox/releases/60.0.1esr/linux-x86_64/en-US/firefox-60.0.1esr.tar.bz2 && tar -xf firefox-60.0.1esr.tar.bz2 -C /root/EXTRAT/firefox-60.0.1esr/
-
+wget -q https://ftp.mozilla.org/pub/firefox/releases/58.0.1/linux-x86_64/en-GB/firefox-58.0.1.tar.bz2 && tar -xf firefox-58.0.1.tar.bz2 -C /root/EXTRAT/firefox-58.0.1/
 wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget -q https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 wget -q https://github.com/thingst0d0/g00rm/raw/main/ocs-url_3.1.0-0ubuntu1_amd64.deb
