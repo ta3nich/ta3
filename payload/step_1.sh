@@ -1,6 +1,6 @@
 echo " * 2 ------------- > INSTALL S -- N -- M "
 
-apt-get -f install  -y \
+DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         jq \
         nano \
         psmisc \
