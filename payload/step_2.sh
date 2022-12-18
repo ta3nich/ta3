@@ -32,7 +32,7 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-imag
 export $(dbus-launch)
 
 
-rm *.tar.bz2 *.tar.gz
+#rm *.tar.bz2 *.tar.gz
 
 
 
